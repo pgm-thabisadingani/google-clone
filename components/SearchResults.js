@@ -1,6 +1,6 @@
 import PaginationsButtons from "./PaginationsButtons";
 
-const SearchResults = ( { results }) => {
+export default function SearchResults({ results }){
   //the highlight of this page is classname="group" you crreated here and use it here
   return (
     <div className=" mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52">
@@ -28,4 +28,3 @@ const SearchResults = ( { results }) => {
   )
 }
 
-export default SearchResults;

@@ -5,7 +5,7 @@ import { useRef } from "react";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
 
-const Header = () => {
+export default function Header() {
   const router = useRouter();
   const searchInputRef = useRef(null)
 
@@ -52,3 +52,4 @@ const Header = () => {
 }
 
 export default Header
+

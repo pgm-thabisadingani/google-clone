@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import SearchResults from "../components/SearchResults";
 import Response from "../Response";
 
-const Search = ({ results }) => {
+export default function Search({ results }){
   //console.log(results);
   const router = useRouter();
 
@@ -20,9 +20,8 @@ const Search = ({ results }) => {
   )
 }
 
-export default Search;
 
-export async function getServerSideProps(context){
+export async function getServerSideProps(context) {
     const useDummyData = false;
     const startIndex = context.query.start || "0";
 

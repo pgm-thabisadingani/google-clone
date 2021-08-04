@@ -1,5 +1,6 @@
-import Image from 'next/image'
-const Avatar = ({ url, className }) => {
+import Image from 'next/image';
+ 
+export default function Avatar({ url, className }){
   return (
     <Image 
       loading="lazy"
@@ -9,5 +10,3 @@ const Avatar = ({ url, className }) => {
     />
   )
 }
-
-export default Avatar

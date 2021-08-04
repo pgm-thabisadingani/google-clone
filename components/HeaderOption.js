@@ -1,4 +1,4 @@
-const HeaderOption = ( { Icon, title, selected}) => {
+export default function HeaderOption({ Icon, title, selected} ){
   return (
     <div className={`flex items-center space-x-1 
       border-b-4 border-transparent 
@@ -12,4 +12,4 @@ const HeaderOption = ( { Icon, title, selected}) => {
   )
 }
 
-export default HeaderOption
+

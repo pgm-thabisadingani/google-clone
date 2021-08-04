@@ -2,7 +2,7 @@ import { ChevronLeftIcon, ChevronRightIcon  } from "@heroicons/react/solid";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 
-const PaginationsButtons = () => {
+export default function PaginationsButtons() {
   const router = useRouter();
   const startIndex = Number(router.query.start) || 0; 
   return (
@@ -25,4 +25,5 @@ const PaginationsButtons = () => {
   )
 }
 
-export default PaginationsButtons
+
+
