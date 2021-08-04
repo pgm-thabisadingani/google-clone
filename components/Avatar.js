@@ -1,6 +1,7 @@
+import Image from 'next/image'
 const Avatar = ({ url, className }) => {
   return (
-    <img 
+    <Image 
       loading="lazy"
       src={url}
       alt="profile pic"
